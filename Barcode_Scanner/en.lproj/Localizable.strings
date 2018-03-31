@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Barcode_Scanner
+
+  Created by Ross on 29/03/2018.
+  Copyright © 2018 Ross. All rights reserved.
+*/
+
+"Press_To_Scan_Product" = "Press To Scan Product Barcode";
+"Or_UPC" = "Or Enter UPC Number Below";
+"Find" = "Find";
+
+
+
