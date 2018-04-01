@@ -11,7 +11,7 @@ import SnapKit
 
 class InitialViewController: UIViewController {
     
-    private let magicMagpieImage = UIImageView(image: .magicMagpieLogo)
+    private let magicMagpieImage = UIImageView(image: .magicMagpieImage)
     private let scanProductButton = MusicMagpieButton()
     private let orUPCLabel = MusicMagpieLabel()
     private let upcField = MusicMagpieTextField()
@@ -75,7 +75,6 @@ extension InitialViewController: Subviewable {
         self.scanProductButton.snp.makeConstraints { (make) in
             make.top.equalTo(magicMagpieImage.snp.bottom).offset(Layout.buttonPadding)
             make.centerX.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.7)
         }
         
         self.orUPCLabel.snp.makeConstraints { (make) in

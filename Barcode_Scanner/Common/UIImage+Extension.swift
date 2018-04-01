@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIImage {
-    static let magicMagpieLogo = UIImage(named: "larry_magpie")!
+    static let magicMagpieImage = UIImage(named: "larry_magpie")!
+    static let squareImage = UIImage(named: "green_square")!
 }
 

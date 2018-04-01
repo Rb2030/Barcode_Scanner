@@ -6,7 +6,7 @@
   Copyright © 2018 Ross. All rights reserved.
 */
 
-"Press_To_Scan_Product" = "Press To Scan Product Barcode";
+"Press_To_Scan_Barcode" = "Press To Scan Barcode";
 "Or_UPC" = "Or Enter UPC Number Below";
 "Find" = "Find";
 

@@ -13,7 +13,6 @@
 		914D14E6206CFEC300791218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914D14E5206CFEC300791218 /* Assets.xcassets */; };
 		914D14E9206CFEC300791218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914D14E7206CFEC300791218 /* LaunchScreen.storyboard */; };
 		914D14F4206CFEC300791218 /* Barcode_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D14F3206CFEC300791218 /* Barcode_ScannerTests.swift */; };
-		914D150C206D4F5300791218 /* UnrecognizedBarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D150B206D4F5300791218 /* UnrecognizedBarcodeViewController.swift */; };
 		914D150E206D4F7800791218 /* ScanningScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D150D206D4F7800791218 /* ScanningScreenViewController.swift */; };
 		914D1510206D4F9900791218 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D150F206D4F9900791218 /* ProductViewController.swift */; };
 		914D1512206D557300791218 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D1511206D557300791218 /* UIColor+Extension.swift */; };
@@ -52,7 +51,6 @@
 		914D14EF206CFEC300791218 /* Barcode_ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Barcode_ScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914D14F3206CFEC300791218 /* Barcode_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode_ScannerTests.swift; sourceTree = "<group>"; };
 		914D14F5206CFEC300791218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		914D150B206D4F5300791218 /* UnrecognizedBarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrecognizedBarcodeViewController.swift; sourceTree = "<group>"; };
 		914D150D206D4F7800791218 /* ScanningScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningScreenViewController.swift; sourceTree = "<group>"; };
 		914D150F206D4F9900791218 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		914D1511206D557300791218 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 			children = (
 				914D14E0206CFEC300791218 /* InitialViewController.swift */,
 				914D150D206D4F7800791218 /* ScanningScreenViewController.swift */,
-				914D150B206D4F5300791218 /* UnrecognizedBarcodeViewController.swift */,
 				914D150F206D4F9900791218 /* ProductViewController.swift */,
 				914D1500206D46D500791218 /* Common */,
 				914D14FE206D46B700791218 /* Supporting Files */,
@@ -410,7 +407,6 @@
 				914D1527206E8DEB00791218 /* MusicMagpieTextField.swift in Sources */,
 				914D1510206D4F9900791218 /* ProductViewController.swift in Sources */,
 				914D1518206D638800791218 /* Layout.swift in Sources */,
-				914D150C206D4F5300791218 /* UnrecognizedBarcodeViewController.swift in Sources */,
 				914D1516206D616400791218 /* UIFont+Extension.swift in Sources */,
 				914D1514206D5F4D00791218 /* Subviewable.swift in Sources */,
 			);

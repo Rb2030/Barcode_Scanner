@@ -15,7 +15,7 @@ extension String {
     
     enum Localized {
         
-        static let pressToScanProduct = "Press_To_Scan_Product".localized
+        static let pressToScanProduct = "Press_To_Scan_Barcode".localized
         static let orUPC = "Or_UPC".localized
         static let find = "Find".localized
 

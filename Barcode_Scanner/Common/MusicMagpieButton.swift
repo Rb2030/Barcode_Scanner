@@ -30,6 +30,8 @@ class MusicMagpieButton: UIButton {
         clipsToBounds = true
         setProperties(borderColor: .lightTealButtonColor, borderWidth:1.0, cornerRadius:5.0)
         titleEdgeInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
+        titleLabel?.numberOfLines = 1
+        titleLabel?.adjustsFontSizeToFitWidth = true
 
     }
     
