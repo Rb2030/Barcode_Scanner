@@ -15,12 +15,12 @@ A small app allowing a user to search for UPC's on their DVD's, games etc.
 - `cd Barcode_Scanner`
 - `pod install`
 - `open Barcode_Scanner.xcworkspace`
-- press play after Xcode opens
+- `press play after Xcode opens`
 
 
 ### Improvements ### 
 
-Unfortunately I did not have enough free time to fully concentrate on this task, this is unfortunate as there are a few items which I would like to add/ improve upon:
+Unfortunately I did not have enough free time to fully concentrate on this task (due to some hardware issues over the weekend), this was unfortunate as there are a few items which I would like to add/ improve upon:
 
 - Unit/Integration Tests
 
