@@ -16,6 +16,10 @@ class InitialViewController: UIViewController {
     private let orUPCLabel = MusicMagpieLabel()
     private let upcField = MusicMagpieTextField()
     private let findUPCButton = MusicMagpieButton()
+    var input: String!
+    let limitLength = 13
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +41,20 @@ class InitialViewController: UIViewController {
         let scanScreenVC = ScanningScreenViewController()
         navigationController?.pushViewController(scanScreenVC, animated: true)
     }
+    
+    @objc func pressToCheckUPC(_ sender: MusicMagpieButton) {
+        let service = APIService()
+        service.initialViewController = self
+        service.getProductData(){success, error in
+            if success {
+                let productViewVC = ProductViewController()            
+                self.navigationController?.pushViewController(productViewVC, animated: true)
+            } else {
+                print("Error getting token \(String(describing: error))")
+            }
+          }
+    }
 }
-
 
 
 extension InitialViewController: Subviewable {
@@ -61,6 +77,7 @@ extension InitialViewController: Subviewable {
         upcField.keyboardType = UIKeyboardType.numberPad
         upcField.textAlignment = .center
         findUPCButton.setTitle(String.Localized.find,for: .normal)
+        findUPCButton.addTarget(self, action: #selector(pressToCheckUPC(_:)), for: .touchUpInside)
 
     }
     
@@ -101,15 +118,13 @@ extension InitialViewController: Subviewable {
 
 extension InitialViewController: UITextFieldDelegate {
 
-func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    
-        let text = textField.text ?? ""
-        let allowedCharacters = CharacterSet.decimalDigits
-        let characterSet = CharacterSet(charactersIn: string)
-        return allowedCharacters.isSuperset(of: characterSet) && text.count - range.length + string.count <= 12
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        input = textField.text
+        guard let text = textField.text else { return true }
+        let newLength = text.count + string.count - range.length
+        return newLength < limitLength
     }
 }
-
 
 
 

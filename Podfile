@@ -6,6 +6,7 @@ target 'Barcode_Scanner' do
 
   # Pods for Barcode_Scanner
 	pod 'SnapKit'
+    pod 'Alamofire'
 
   target 'Barcode_ScannerTests' do
     inherit! :search_paths

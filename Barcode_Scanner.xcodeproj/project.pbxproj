@@ -25,6 +25,8 @@
 		914D1523206E5B6A00791218 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D1522206E5B6A00791218 /* UIImage+Extension.swift */; };
 		914D1525206E79BE00791218 /* MusicMagpieLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D1524206E79BE00791218 /* MusicMagpieLabel.swift */; };
 		914D1527206E8DEB00791218 /* MusicMagpieTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D1526206E8DEB00791218 /* MusicMagpieTextField.swift */; };
+		9167E9C3207198D5004545C2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167E9C2207198D5004545C2 /* APIService.swift */; };
+		9167E9C6207321E7004545C2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167E9C5207321E7004545C2 /* Product.swift */; };
 		AB34E6E4A8B6B2E7D677D4DC /* Pods_Barcode_Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523C23F74AE6DF7C663B2694 /* Pods_Barcode_Scanner.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		914D1522206E5B6A00791218 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		914D1524206E79BE00791218 /* MusicMagpieLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMagpieLabel.swift; sourceTree = "<group>"; };
 		914D1526206E8DEB00791218 /* MusicMagpieTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMagpieTextField.swift; sourceTree = "<group>"; };
+		9167E9C2207198D5004545C2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9167E9C5207321E7004545C2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9262C9F5E2020B655B80B233 /* Pods-Barcode_ScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barcode_ScannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Barcode_ScannerTests/Pods-Barcode_ScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD65428BFBCB3F8AF0EFA1EA /* Pods-Barcode_Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barcode_Scanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Barcode_Scanner/Pods-Barcode_Scanner.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5637A9FD87143B0C8D1A1E /* Pods-Barcode_Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Barcode_Scanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Barcode_Scanner/Pods-Barcode_Scanner.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				914D14E0206CFEC300791218 /* InitialViewController.swift */,
 				914D150D206D4F7800791218 /* ScanningScreenViewController.swift */,
 				914D150F206D4F9900791218 /* ProductViewController.swift */,
+				9167E9C4207321C9004545C2 /* Models */,
+				9167E9C1207198AF004545C2 /* Services */,
 				914D1500206D46D500791218 /* Common */,
 				914D14FE206D46B700791218 /* Supporting Files */,
 				914D14DE206CFEC300791218 /* AppDelegate.swift */,
@@ -183,6 +189,22 @@
 				914D1513206D5F4D00791218 /* Subviewable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9167E9C1207198AF004545C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9167E9C2207198D5004545C2 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9167E9C4207321C9004545C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9167E9C5207321E7004545C2 /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +334,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Barcode_Scanner/Pods-Barcode_Scanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,12 +422,14 @@
 			files = (
 				914D1525206E79BE00791218 /* MusicMagpieLabel.swift in Sources */,
 				914D150E206D4F7800791218 /* ScanningScreenViewController.swift in Sources */,
+				9167E9C6207321E7004545C2 /* Product.swift in Sources */,
 				914D1521206E54D000791218 /* String+Extension.swift in Sources */,
 				914D14E1206CFEC300791218 /* InitialViewController.swift in Sources */,
 				914D1523206E5B6A00791218 /* UIImage+Extension.swift in Sources */,
 				914D14DF206CFEC300791218 /* AppDelegate.swift in Sources */,
 				914D1512206D557300791218 /* UIColor+Extension.swift in Sources */,
 				914D151A206D63EB00791218 /* MusicMagpieButton.swift in Sources */,
+				9167E9C3207198D5004545C2 /* APIService.swift in Sources */,
 				914D1527206E8DEB00791218 /* MusicMagpieTextField.swift in Sources */,
 				914D1510206D4F9900791218 /* ProductViewController.swift in Sources */,
 				914D1518206D638800791218 /* Layout.swift in Sources */,
